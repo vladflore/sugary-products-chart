@@ -39,7 +39,7 @@ def arecountriesinlist(countries_to_search_for, countries):
     return any(country.lower() in countries_str
                for country in countries_to_search_for)
 
-
+# this filtering condition is intentionally not used, but it could very well be :) 
 product_sold_in_countries = foodfacts.apply(
     lambda dataset: arecountriesinlist(['France'], dataset['countries']), axis=1)
 
