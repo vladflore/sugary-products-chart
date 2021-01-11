@@ -8,7 +8,14 @@ The sugary products chart is a simple chart made by interpreting the data from t
 
 ## Prerequisites
 
-Before running `process_food_facts.py` make sure to have downloaded the `CSV` file with the data from [this page](https://de.openfoodfacts.org/data) and placed it beside the `.py` script.
+Before running `process_food_facts.py` make sure to have downloaded the `CSV` file with the data from [this page](https://de.openfoodfacts.org/data) and placed it beside the `.py` script. Please note, that the file is pretty big, about 3.2 GB, therefore downloading it might take some time.
+
+I am using version `3.8.6` of python, as can be seen below (this is not a prerequisite, though):
+
+```
+$ python3 --version
+Python 3.8.6
+```
 
 ## Run the script
 
@@ -24,6 +31,9 @@ When the script is finished two new files will have appeared:
 
 The `chart.js` is used by the `chart.html`, which by opening it in your favorite Web browser will display the visualization.
 
+> **_NOTE:_**
+> The whole process takes about 1 minute and 30 seconds to finish on my machine.
+
 # License
 
-This code is released under [LICENSE](LICENSE) 
+This code is released under the terms and agreements of [LICENSE](LICENSE).
